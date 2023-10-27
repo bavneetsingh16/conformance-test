@@ -23,5 +23,8 @@ spec:
       type: NodePort
     ingressClassResource:
       name: nginx
-    controller:
+    # controller:
+    #   serviceAccountName: nginx2-nginx-nginx-ingress-controller
+    rbac:
+      create: true
       serviceAccountName: nginx2-nginx-nginx-ingress-controller
