@@ -1,11 +1,11 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
-  name: nginx
+  name: nginx2
   namespace: cluster-config
 spec:
   targetNamespace: nginx2
-  releaseName: nginx-ingress-controller
+  releaseName: nginx2-nginx-nginx-ingress-controller
   chart:
     spec:
       chart: nginx-ingress-controller
