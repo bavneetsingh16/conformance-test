@@ -5,7 +5,7 @@ metadata:
   namespace: cluster-config
 spec:
   targetNamespace: nginx2
-  releaseName: nginx2-nginx-nginx-ingress-controller
+  releaseName: nginx-ingress-controller
   chart:
     spec:
       chart: nginx-ingress-controller
@@ -23,3 +23,5 @@ spec:
       type: NodePort
     ingressClassResource:
       name: nginx
+    controller:
+      serviceAccountName: nginx2-nginx-nginx-ingress-controller
