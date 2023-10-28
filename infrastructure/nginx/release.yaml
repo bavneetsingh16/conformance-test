@@ -26,6 +26,3 @@ spec:
     rbac:
       create: true
       serviceAccountName: nginx2-nginx-nginx-ingress-controller
-    # controller:
-    #   serviceAccountName: nginx2-nginx-nginx-ingress-controller
-
