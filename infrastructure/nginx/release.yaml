@@ -6,6 +6,7 @@ metadata:
 spec:
   targetNamespace: nginx2
   releaseName: nginx-ingress-controller
+  serviceAccountName: nginx2-nginx-nginx-ingress-controller
   chart:
     spec:
       chart: nginx-ingress-controller
